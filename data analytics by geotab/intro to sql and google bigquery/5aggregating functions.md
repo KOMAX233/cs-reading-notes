@@ -1,0 +1,49 @@
+# functions
+- ## aggregate (after select)
+  - ### sum()
+    - `column1`: sum of all non-NULL values in column1
+  - ### count():
+    - `column1`: count non-null value in column1
+    - `*`: count all values in column1, including nulls
+    - NULL means _data value does not exist_
+  - ### min()
+    - return min non-NULL value 
+    - return same data type
+  - ### max()
+    - return max non-NULL value 
+    - return same data type
+  - ### avg()
+    - return average non-NULL value 
+    - return same data type
+      - round(xx, (decimal))
+      - default: round to next whole number
+  - ### stddev()
+  - ### var()
+- ## table function
+- ## scalar function
+  - ### number
+  - ### string
+  - ### date time
+    - #### now
+  - ### date type conversion
+    - cast
+
+
+## aggregate function syntax
+- select `aggFunc(column1), column2`
+  - distinct():
+    - remove duplicate / return unique values
+- from `big.query.table`
+- where `condition` (filter **before** grouping)
+- group by: group row that have the same values into summary rows
+  - `column1` (column1 must be in select statement)
+  - used with select
+  - used with count, min, max, sum, avg
+  - always after where
+  - ususally preceded by order by
+  - `column sequence numbers 1 2 3`
+  - named after numbers
+  - not recommanded because of low readability
+- having `condition` (filter **from** grouping): 
+  - used in combination with group by
+  - used when `group by` is not sufficient
