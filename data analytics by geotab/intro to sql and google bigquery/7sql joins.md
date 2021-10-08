@@ -16,7 +16,7 @@
   INNER JOIN Table_2 ON Table_2.row = Table_2.row;
   ```
   
-- ## LEFT/RIGHT JOIN
+- ## LEFT/RIGHT (OUTER) JOIN
   return all rows from the left and matching rows from right ![](https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2Fjoyeetarahman_geotab_com_nc2pmg%2Fpublic%2F1607477694%2FScreenshot+2020-12-08+at+8.33.50+PM.1607477694184.png)
   
 - ## FULL (OUTER) JOIN
